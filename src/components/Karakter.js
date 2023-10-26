@@ -5,6 +5,8 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+
 
 export default function Karakter(props) {
     const kisi = props.kisi
@@ -26,7 +28,21 @@ export default function Karakter(props) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography variant='overline' >{ kisi.name }</Typography>
+          <Avatar src="/static/images/avatar.jpg" sx={{ width: 24, height: 24 }}
+          alt={kisi.name}
+          style={{
+            backgroundColor: 'black',
+            border: '1px solid #ccc',
+                 }
+                }
+            />
+          <Typography variant='overline' sx={{ ml: 2 }}
+          fontWeight='bold'
+          fontSize='1rem'
+          color='text.primary'
+           >{ kisi.name }
+           </Typography>
+           
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
