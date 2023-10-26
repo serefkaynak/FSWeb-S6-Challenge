@@ -30,7 +30,7 @@ const App = () => {
       <div className='accordion-div'>
         {characters.map(kisi => {
           return <div 
-                    className='accordion'>
+                      className='accordion'>
                       <Karakter kisi={kisi} />
                   </div>
         })}

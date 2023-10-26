@@ -22,6 +22,7 @@
 }
 
 .accordion-item {
-  background: rgb(210 219 225 / 85%) !important;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(27,27,27,0.6811318277310925) 0%, rgba(232,232,232,1) 100%);
   padding: 10px 0;
 }

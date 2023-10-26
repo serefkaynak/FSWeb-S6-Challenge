@@ -7,12 +7,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
 export default function Karakter(props) {
-
-    console.log(props.kisi, ' PROPS')
-
-    const [gezegen, setGezegen] = useState(''); 
-
     const kisi = props.kisi
+    const [gezegen, setGezegen] = useState(''); 
 
     useEffect(() => {
         axios.get(kisi.homeworld)
@@ -30,7 +26,7 @@ export default function Karakter(props) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{ kisi.name }</Typography>
+          <Typography variant='overline' >{ kisi.name }</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
